@@ -28,9 +28,9 @@ header {border-bottom: 1px solid rgba(210, 210, 210);}
 
 /* 회원가입 페이지 */
 main {margin:0 auto; padding: 30px 50px 0; max-width: 700px;}
-main h1 {margin-bottom: 5px;}
+main h1 {margin-bottom: 5px; }
 main em {font-size: 14px;}
-main form {margin-top: 25px;}
+main form {margin-top: 25px; border:1px solid red}
  form > div:not(.consentTOS, .consentPI, .button) {margin-top: 25px;width: 300px;} 
  form div:not(.consentTOS, .consentPI) > input {float: right; border:1px solid rgba(150, 150, 150);}
  form > div > strong {font-size: 14px;}
