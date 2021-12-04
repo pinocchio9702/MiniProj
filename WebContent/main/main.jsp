@@ -3,8 +3,8 @@ pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
