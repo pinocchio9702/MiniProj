@@ -3,12 +3,14 @@
 /* reset */
 body {
     font:normal 16px 'Roboto', sans-serif;
+	font-family: SF Pro KR,SF Pro Text,SF Pro Icons,Apple Gothic,HY Gulim,MalgunGothic,HY Dotum,Lexi Gulim,Helvetica Neue,Helvetica,Arial,sans-serif;
 	line-height:1.3;
 	color:black;
 	background-color:#fff;
 	margin:0;
 	padding:0;
 }
+
 h1, h2, h3, h4, h5, h6 {font-size:1em;}
 h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
 	margin:0;
@@ -27,44 +29,33 @@ header img {width: 100px;margin: 5px 0 0 5px;}
 header {border-bottom: 1px solid rgba(210, 210, 210);}
 
 /* 회원가입 페이지 */
-main {margin:0 auto; padding: 30px 50px 0; max-width: 700px;}
-main h1 {margin-bottom: 5px; }
-main em {font-size: 14px;}
-main form {margin-top: 25px; border:1px solid red}
- form > div:not(.consentTOS, .consentPI, .button) {margin-top: 25px;width: 300px;} 
- form div:not(.consentTOS, .consentPI) > input {float: right; border:1px solid rgba(150, 150, 150);}
- form > div > strong {font-size: 14px;}
- form > div > label:not(.consentPI *, .consentTOS *) {font-size: 14px; font-weight: bold;}
- form .consentTOS p, .consentPI p {outline: 1px solid rgba(210, 210, 210);height: 100px;margin: 7px 0;overflow-y: scroll;font-size: 14px;padding: 3px 5px;}
- form .consentTOS label, .consentPI label {font-size: 12px;} 
- form .consentPI {margin: 20px 0 40px;}
- form #birthDate {width: 175px;height: 21px;box-sizing: border-box; text-align: center;}
+main {margin:0 auto; padding: 30px 50px 0;}
+main h1 {margin-bottom: 5px;font-size: 26px; text-align: center; margin-bottom: 10px;}
+main em {font-size: 14px; display: block; text-align: center;}
+main form {margin: 25px auto; min-width: 80%; }
+ form > div {border-bottom: 1px solid rgba(230, 230, 230); padding:30px 0;}
+ form > div > div {width: 500px; margin:0 auto;}
+ form input {width: 100%; box-sizing: border-box; padding:15px; border:1px solid rgba(210, 210, 210);}
+ form label {display: block; font-size: 12px;}
+ form .first {padding-top:0;}
+ form .name > * {display: inline;}
+ form .name > input {width: calc(50% - 10px);}
+ form .name > #lastName {margin-left: 15px; margin-bottom: 30px;}
+ form .nation label {font-weight: bold; margin-bottom: 2px;}
+ form #nation {width: 100%; padding: 15px; border:1px solid rgba(210, 210, 210); margin-bottom: 15px;}
+ form #birthDate {width: 100%; padding: 15px;}
+ form .email label {margin-top: 5px; color: gray; font-weight: normal;}
+ form .password {margin-top: 15px;}
+ form .password > * {display: inline;}
+ form .password > #passwordConfirm {margin-left: 15px;}
+ form .password > input {width: calc(50% - 10px);}
+ form .contact {overflow: hidden;}
+ form .contact #nationNum {padding: 14px; border:1px solid rgba(210, 210, 210); width: calc(40% - 5px); float: left; margin-right: 10px;}
+ form .contact input {width: calc(60% - 5px);}
+ form .contact label {color:gray; float: left; margin-top: 5px;}
+ form .consentPI input {float: left; width: 20px;} 
+ form .consentPI label {float: left; width: calc(100% - 30px);font-size: 12px; vertical-align:middle;} 
+ form .consentPI label a {color:steelblue; font-weight: bold; font-size: 14px;}
+ form .consentPI {overflow: hidden;}
  form .button {margin-top: 40px;text-align: center;}
  form .button button {padding:13px 30px;}
-
-/* 신분증명 페이지 */
- form div select {float: right;width: 175px;border: 1px solid rgba(150, 150, 150);;}
- form #impositionDate {width: 175px;height: 21px;box-sizing: border-box; text-align: center;}
- form div span {font-size: 12px;position: relative;right: calc(-100% + 175px);min-width: 450px;top:5px;display: inline-block;}
- form div span:nth-child(2n) {color:red;vertical-align: top;}
- form #file {float: right; width: 175px;}
- 
- main .status {
-	 border-top: 1px solid rgba(210, 210, 210);
-	 margin-top: 30px;
-	 padding-top: 20px;
- }
- main .status table {
-	 margin-top: 10px;
-	 text-align: center;
-	 width: 300px;
-	 border:1px solid blue;
-	 margin: 10px auto 20px;
- }
- main .status em {
-	 display: block;
-	 text-align: center;
-	 color: rgba(150, 150, 150);
-	 font-size: 12px;
-	 font-weight: bold;
- }
