@@ -1,0 +1,116 @@
+@charset "EUC-KR";
+
+/* reset */
+body {
+    font:normal 16px 'Roboto', sans-serif;
+	line-height:1.3;
+	color:black;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+}
+h1, h2, h3, h4, h5, h6 {font-size:1em;}
+h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquote, address, table, thead, tbody, tfoot, tr, td, caption {
+	margin:0;
+	padding:0;
+	/* box-sizing: border-box; */
+}
+li {list-style:none;}
+a {text-decoration:none;}
+a:visited { color: inherit; }
+em {font-style:normal}
+
+button {border:none; padding:13px 18px;color: white;font-weight: bold;background-color: #212a2f;}
+button:hover {background-color: white;color: #212a2f; outline: 1px solid #212a2f;}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../image/backgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header img {
+    width: 100px;
+    margin: 5px 0 0 5px;
+}
+
+header {border-bottom: 1px solid white;}
+
+main {
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    min-height: 400px;
+    min-width: 500px;
+}
+main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+main em {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.loginBox {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 450px;
+    height: 160px;
+    padding: 40px 20px 20px 20px;
+    box-sizing: border-box;
+    outline: 1px solid rgba(210, 210, 210);
+}
+.loginBox input {
+    height: 100%;
+    width: 240px;
+    margin-left: 10px;
+    padding:0 0 0 7px;
+    box-sizing: border-box;
+    border: 1px solid rgba(200, 200, 200);    
+}
+.idBox {
+    width: 320px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.idBox span {
+    margin-right: 7px;
+}
+.pwBox {
+    width: 320px;
+    height: 30px;
+}
+.loginBtn {
+    position: absolute;
+    right: 40px;
+    top: calc(50% - 5px);
+    transform: translate(0, -50%);
+    height: 70px;
+}
+.searchAccount {
+    margin-top: 12px;
+    font-size: 13px;
+    color: rgba(100, 100, 100);
+}
+.searchAccount .searchID::after {
+    content: "";
+    border-left: 1px solid rgba(200, 200, 200);    
+    margin: 0 5px 0 10px;
+} 
+.register {
+    position: absolute;
+    bottom: 30px;
+    width: 150px;
+    right: 50%;
+    transform: translate(50%);
+}
